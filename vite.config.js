@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
-  plugins: [react()],
-  // If we are deploying to GitHub Pages (which sets GITHUB_ACTIONS env var or similar),
-  // we might use a base path. Vercel however expects the root '/'.
-  // Vercel sets an environment variable `VERCEL` to '1'.
-  base: process.env.VERCEL ? '/' : '/Students-Table-Manager/',
+export default defineConfig(({ command, mode }) => {
+  return {
+    plugins: [react()],
+    // If not building for Vercel, use the repository name for GitHub Pages
+    base: process.env.VERCEL ? '/' : '/Students-Table-Manager/',
+  }
 })
