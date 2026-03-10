@@ -168,10 +168,7 @@ export default function App() {
                 </div>
             </main>
 
-            {/* ── Footer ── */}
-            <footer className="app-footer">
-                Students Table Manager · Built with React + Vite · All data stored in memory
-            </footer>
+            {/* ── Footer Removed ── */}
 
             {/* ── Add/Edit Form Modal ── */}
             {showForm && (
