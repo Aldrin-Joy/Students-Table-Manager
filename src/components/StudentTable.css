@@ -1,0 +1,153 @@
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1px solid #1e293b;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.student-table thead tr {
+    background: #0f172a;
+}
+
+.student-table th {
+    padding: 0.85rem 1.1rem;
+    text-align: left;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border-bottom: 1px solid #1e293b;
+}
+
+.student-table tbody tr {
+    border-bottom: 1px solid #1a2436;
+    transition: background 0.15s;
+}
+
+.student-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.student-table tbody tr:hover {
+    background: #0f1a2e;
+}
+
+.student-table td {
+    padding: 0.85rem 1.1rem;
+    color: #cbd5e1;
+    font-size: 0.92rem;
+}
+
+.td-index {
+    color: #475569;
+    font-size: 0.82rem;
+    width: 40px;
+}
+
+/* Name + Avatar */
+.name-avatar {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-weight: 500;
+    color: #f1f5f9;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.td-email {
+    color: #94a3b8;
+}
+
+.age-badge {
+    display: inline-block;
+    background: #1e293b;
+    color: #a5b4fc;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+}
+
+/* Action buttons */
+.td-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    padding: 0.38rem 0.85rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+}
+
+.edit-btn {
+    background: #1e3a5f;
+    color: #60a5fa;
+    border: 1px solid #1e4a8a;
+}
+
+.edit-btn:hover {
+    background: #1e4a8a;
+    color: #bfdbfe;
+}
+
+.delete-btn {
+    background: #3b1a1a;
+    color: #f87171;
+    border: 1px solid #5b2929;
+}
+
+.delete-btn:hover {
+    background: #5b2929;
+    color: #fca5a5;
+}
+
+/* Empty state */
+.table-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    color: #475569;
+    gap: 0.75rem;
+}
+
+.empty-icon {
+    font-size: 3rem;
+}
+
+.table-empty p {
+    font-size: 1rem;
+    margin: 0;
+}
